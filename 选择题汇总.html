@@ -1,0 +1,1551 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>选择题汇总</title>
+<style>
+:root { color-scheme: light; font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", sans-serif; color: #172033; background: #f5f7fb; }
+body { margin: 0; }
+main { width: min(50rem, calc(100% - 2rem)); margin: 2.5rem auto; }
+header { margin-bottom: 1.5rem; }
+h1 { margin: 0 0 .35rem; font-size: 2rem; }
+h2 { margin: 0 0 .65rem; font-size: 1rem; color: #173d72; }
+p { margin: 0; }
+article { background: #fff; border: 1px solid #dbe2ec; border-radius: .6rem; margin-bottom: .9rem; padding: 1rem 1.2rem; line-height: 1.65; overflow-wrap: anywhere; }
+.stem p + p { margin-top: .25rem; }
+.stem p, .option { white-space: pre-wrap; }
+.topic, .meta { color: #45556e; font-size: .875rem; }
+.topic { margin-bottom: .35rem; }
+pre { margin: .55rem 0; padding: .65rem .8rem; border-radius: .3rem; background: #f1f4f9; white-space: pre-wrap; tab-size: 4; }
+code { font-family: Consolas, "Microsoft YaHei", monospace; font-size: .9rem; }
+img { display: block; max-width: 100%; height: auto; margin: .55rem 0; }
+.options { list-style: none; margin: .55rem 0; padding: 0; }
+.options li { display: grid; grid-template-columns: 1.6rem minmax(0, 1fr); gap: .15rem; }
+.letter { font-weight: 600; }
+@media print {
+  :root { background: white; }
+  main { width: 100%; margin: 0; }
+  article { break-inside: avoid; }
+}
+</style>
+</head>
+<body>
+<main>
+<header>
+<h1>选择题汇总</h1>
+<p>上海市高等学校信息技术水平考试 · C 程序设计 · 共 117 道单选题</p>
+</header>
+<article id="q1" aria-labelledby="label1">
+<h2 id="label1">第 1 题</h2>
+<div class="stem"><p>下列描述中正确的是：（_____）</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">&quot;main&quot;的各种大小写拼写形式都可以作为主函数名。</span></li>
+<li><span class="letter">B.</span><span class="option">在C语言程序中，模块化主要是通过函数来实现的。</span></li>
+<li><span class="letter">C.</span><span class="option">C语言编写的程序只能放在一个源程序文件中。</span></li>
+<li><span class="letter">D.</span><span class="option">C语言程序中可以由用户指定一个函数作为主函数。</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2020年C场第1题</p>
+</article>
+<article id="q2" aria-labelledby="label2">
+<h2 id="label2">第 2 题</h2>
+<div class="stem"><p>C语言中，用户可以使用的标识符是：（______）</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">2019_nCov</span></li>
+<li><span class="letter">B.</span><span class="option">float</span></li>
+<li><span class="letter">C.</span><span class="option">user@name</span></li>
+<li><span class="letter">D.</span><span class="option">_temp</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2020年C场第2题</p>
+</article>
+<article id="q3" aria-labelledby="label3">
+<h2 id="label3">第 3 题</h2>
+<div class="stem"><p>设有定义：int  x=5, y=2; 则下列语句中正确的是：（_____）</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">x = float(x) % y;</span></li>
+<li><span class="letter">B.</span><span class="option">x = float(x) / y;</span></li>
+<li><span class="letter">C.</span><span class="option">x = (float)x % y;</span></li>
+<li><span class="letter">D.</span><span class="option">x = (float)x / y;</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2020年C场第3题</p>
+</article>
+<article id="q4" aria-labelledby="label4">
+<h2 id="label4">第 4 题</h2>
+<div class="stem"><p>满足数学式0＜x＜5的C语言逻辑表达式是：（_____）</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">(0&lt;x) and (x&lt;5)</span></li>
+<li><span class="letter">B.</span><span class="option">0＜x || x＜5</span></li>
+<li><span class="letter">C.</span><span class="option">0＜x＜5</span></li>
+<li><span class="letter">D.</span><span class="option">0＜x &amp;&amp; x＜5</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2020年C场第4题</p>
+</article>
+<article id="q5" aria-labelledby="label5">
+<h2 id="label5">第 5 题</h2>
+<div class="stem"><p>设有定义:  int a=3 ; 以下代码段的输出结果是：（_____）</p>
+<pre><code>switch(a==1) 
+{  
+    case  0 :  printf (&quot;*&quot;);  break;
+    case  1 :  printf (&quot;**&quot;);  break;
+    default :  printf (&quot;***&quot;);
+}</code></pre></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">程序有错，无输出</span></li>
+<li><span class="letter">B.</span><span class="option">***</span></li>
+<li><span class="letter">C.</span><span class="option">**</span></li>
+<li><span class="letter">D.</span><span class="option">*</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2020年C场第5题、2021年B场第3题</p>
+</article>
+<article id="q6" aria-labelledby="label6">
+<h2 id="label6">第 6 题</h2>
+<div class="stem"><p>设有定义: int  a, b; 运行以下代码段后b的值是：（_____）</p>
+<pre><code>for ( a=b=0 ;  ; a++ ) 
+{ 
+    if  ( a%5 == 0 )  break; 
+    b = b+a;
+}</code></pre></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">4</span></li>
+<li><span class="letter">B.</span><span class="option">3</span></li>
+<li><span class="letter">C.</span><span class="option">1</span></li>
+<li><span class="letter">D.</span><span class="option">0</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2020年C场第6题</p>
+</article>
+<article id="q7" aria-labelledby="label7">
+<h2 id="label7">第 7 题</h2>
+<div class="stem"><p>以下程序运行后，输出结果是：（_____）</p>
+<pre><code>int fun(int x)
+{
+    static int a=4;
+    a=a * x;
+    return(a);
+}
+int main(void)
+{ 
+    int  x=2,  y=3,  n;
+    n = fun(x);
+    n = fun(y);
+    printf(&quot;%d\n&quot;,n);
+    return 0;
+}</code></pre></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">8</span></li>
+<li><span class="letter">B.</span><span class="option">9</span></li>
+<li><span class="letter">C.</span><span class="option">12</span></li>
+<li><span class="letter">D.</span><span class="option">24</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2020年C场第7题</p>
+</article>
+<article id="q8" aria-labelledby="label8">
+<h2 id="label8">第 8 题</h2>
+<div class="stem"><p>下列语句中，正确的是：（_____）</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">int  d[2][3] = { {1,2},{3,4},{5,6} };</span></li>
+<li><span class="letter">B.</span><span class="option">int  d[3][2] = { {1,2},{3,4},{5,6} };</span></li>
+<li><span class="letter">C.</span><span class="option">int  n=1, d[n][3] = { 16,10,4 };</span></li>
+<li><span class="letter">D.</span><span class="option">int  d[3][ ] = { 16,10,4 };</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2020年C场第8题</p>
+</article>
+<article id="q9" aria-labelledby="label9">
+<h2 id="label9">第 9 题</h2>
+<div class="stem"><p>设有定义: int a=10, b=5, *p=&amp;a, *q=&amp;b; 执行下列语句后，b的值不改变的是：（_____）</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">b = a;</span></li>
+<li><span class="letter">B.</span><span class="option">*q = *p;</span></li>
+<li><span class="letter">C.</span><span class="option">q = p;</span></li>
+<li><span class="letter">D.</span><span class="option">b = 10;</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2020年C场第9题</p>
+</article>
+<article id="q10" aria-labelledby="label10">
+<h2 id="label10">第 10 题</h2>
+<div class="stem"><p>设已建立以下链表结构，指针p，s分别指向如图所示节点，将s所指节点插入到p所指结点之后，并使s结点作为链表尾结点，正确的语句是：（_____）</p>
+<img src="data:image/png;base64,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" alt="链表由数据为 10、20 的两个结点组成，p 指向尾结点 20，其 next 为 NULL。s 指向待插入的结点 30。" width="478" height="113"></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">s-&gt;next = p-&gt;next;  p-&gt;next = s;</span></li>
+<li><span class="letter">B.</span><span class="option">s-&gt;next = p+1;  p-&gt;next = s;</span></li>
+<li><span class="letter">C.</span><span class="option">s-&gt;next = p-&gt;next;  p-&gt;next = s-&gt;next;</span></li>
+<li><span class="letter">D.</span><span class="option">p-&gt;next = s;  s-&gt;next = p-&gt;next;</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2020年C场第10题</p>
+</article>
+<article id="q11" aria-labelledby="label11">
+<h2 id="label11">第 11 题</h2>
+<div class="stem"><p>一个C语言程序的执行，下列描述中正确的是：（_____）</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">从程序的main函数开始， 到程序的main函数结束</span></li>
+<li><span class="letter">B.</span><span class="option">从程序的第一个函数开始，到程序的最后一个函数结束</span></li>
+<li><span class="letter">C.</span><span class="option">从程序的main函数开始， 到程序的最后一个函数结束</span></li>
+<li><span class="letter">D.</span><span class="option">从程序的第一个函数开始，到程序的main函数结束</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2020年D场第1题</p>
+</article>
+<article id="q12" aria-labelledby="label12">
+<h2 id="label12">第 12 题</h2>
+<div class="stem"><p>C语言中，用户可以使用的标识符是：（______）</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">2019nCov</span></li>
+<li><span class="letter">B.</span><span class="option">int</span></li>
+<li><span class="letter">C.</span><span class="option">user$name</span></li>
+<li><span class="letter">D.</span><span class="option">P_0</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2020年D场第2题</p>
+</article>
+<article id="q13" aria-labelledby="label13">
+<h2 id="label13">第 13 题</h2>
+<div class="stem"><p>设有定义：int x=2,y; 执行下列语句后，y的值等于9的是：（_____）</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">y = x*(x+2)+1;</span></li>
+<li><span class="letter">B.</span><span class="option">y = x*(1+x);</span></li>
+<li><span class="letter">C.</span><span class="option">y = (x+1,3*x);</span></li>
+<li><span class="letter">D.</span><span class="option">y = (3*x,x+3);</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2020年D场第3题</p>
+</article>
+<article id="q14" aria-labelledby="label14">
+<h2 id="label14">第 14 题</h2>
+<div class="stem"><p>能正确表示a和b同时为正或同时为负的逻辑表达式是：（______）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">(a&gt;=0||b&gt;=0)&amp;&amp;(a&lt;0||b&lt;0)</span></li>
+<li><span class="letter">B.</span><span class="option">(a&gt;=0&amp;&amp;b&gt;=0)&amp;&amp;(a&lt;0&amp;&amp;b&lt;0)</span></li>
+<li><span class="letter">C.</span><span class="option">(a+b&gt;0)&amp;&amp;(a+b&lt;=0)</span></li>
+<li><span class="letter">D.</span><span class="option">a*b&gt;0</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2020年D场第4题、2021年A场第2题</p>
+</article>
+<article id="q15" aria-labelledby="label15">
+<h2 id="label15">第 15 题</h2>
+<div class="stem"><p>设有定义: int  a = 2; 以下代码段的输出结果是：（_____）</p>
+<pre><code>    switch(a) 
+    {  
+       case  0 :  a++;    break;
+       case  1 :  a=a+2;  break;
+       default :  a=a+3;  break;
+    }      
+    printf(&quot;%d&quot;,a);</code></pre></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">2</span></li>
+<li><span class="letter">B.</span><span class="option">3</span></li>
+<li><span class="letter">C.</span><span class="option">4</span></li>
+<li><span class="letter">D.</span><span class="option">5</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2020年D场第5题</p>
+</article>
+<article id="q16" aria-labelledby="label16">
+<h2 id="label16">第 16 题</h2>
+<div class="stem"><p>设有定义: int  x; 以下代码段的循环体执行次数是：（_____）</p>
+<pre><code>    x = 3;
+    do{
+          x -= 2;
+       } while(x&gt;0);</code></pre></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">死循环</span></li>
+<li><span class="letter">B.</span><span class="option">2次</span></li>
+<li><span class="letter">C.</span><span class="option">1次</span></li>
+<li><span class="letter">D.</span><span class="option">0次</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2020年D场第6题</p>
+</article>
+<article id="q17" aria-labelledby="label17">
+<h2 id="label17">第 17 题</h2>
+<div class="stem"><p>以下程序运行后，输出结果是：（_____）</p>
+<pre><code>int  fun(int x)
+{
+   static  int  y=5;
+   y = y+x;
+   return(y);
+}
+int  main(void)
+{ 
+   int  n;
+   n = fun(3);
+   n = fun(4);
+   printf(&quot;%d\n&quot;,n);
+   return  0;
+}</code></pre></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">8</span></li>
+<li><span class="letter">B.</span><span class="option">9</span></li>
+<li><span class="letter">C.</span><span class="option">10</span></li>
+<li><span class="letter">D.</span><span class="option">12</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2020年D场第7题</p>
+</article>
+<article id="q18" aria-labelledby="label18">
+<h2 id="label18">第 18 题</h2>
+<div class="stem"><p>下列语句中，正确的是：（_____）</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">char  *str[2] = { &quot;1234&quot;,&quot;abcd&quot; };</span></li>
+<li><span class="letter">B.</span><span class="option">char  str[ ][4] = { &quot;1234&quot;,&quot;abcd&quot; };</span></li>
+<li><span class="letter">C.</span><span class="option">char  str[2][4] = { &quot;1234&quot;,&quot;abcd&quot; };</span></li>
+<li><span class="letter">D.</span><span class="option">int  n=2;  char  *str[n] = { &quot;1234&quot;,&quot;abcd&quot; };</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2020年D场第8题</p>
+</article>
+<article id="q19" aria-labelledby="label19">
+<h2 id="label19">第 19 题</h2>
+<div class="stem"><p>设有定义: int  a[10] = {1,2,3,4,5,6,7,8,9,10} , *p = a; 则数值为6的表达式是：（_____）</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">*p+6</span></li>
+<li><span class="letter">B.</span><span class="option">*(p+6)</span></li>
+<li><span class="letter">C.</span><span class="option">*p+5</span></li>
+<li><span class="letter">D.</span><span class="option">p+5</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2020年D场第9题</p>
+</article>
+<article id="q20" aria-labelledby="label20">
+<h2 id="label20">第 20 题</h2>
+<div class="stem"><p>设有以下定义和代码段，在遍历单链表时求解data值最大的结点，位置①上正确的语句是：（_____）</p>
+<pre><code>    struct  node {
+        int  data;
+        struct  node  *next ;
+    } *head, *p, *q;  //head指向单链表的第1个结点，如图所示
+p = head;       //先假定第一个结点中数据具有最大值
+q = head-&gt;next;
+    while (q!=NULL)
+    { 
+        if (__①__)  p=q;  //如果q的值大于p的值，重新赋值
+        q = q-&gt;next;     //遍历单链表
+    }</code></pre>
+<img src="data:image/png;base64,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" alt="head 和 p 指向数据为 10 的首结点，后续结点的数据依次为 20 和 30，尾结点的 next 为 NULL。" width="360" height="81"></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">q &gt; p</span></li>
+<li><span class="letter">B.</span><span class="option">*q &gt; *p</span></li>
+<li><span class="letter">C.</span><span class="option">q-&gt;next &gt; p-&gt;next</span></li>
+<li><span class="letter">D.</span><span class="option">q-&gt;data &gt; p-&gt;data</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2020年D场第10题</p>
+</article>
+<article id="q21" aria-labelledby="label21">
+<h2 id="label21">第 21 题</h2>
+<div class="stem"><p>下列选项中合法的变量声明语句是：（_____）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">short 2a=87;</span></li>
+<li><span class="letter">B.</span><span class="option">int do=010;</span></li>
+<li><span class="letter">C.</span><span class="option">float a=e2;</span></li>
+<li><span class="letter">D.</span><span class="option">double _a=2e-1;</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2021年A场第1题</p>
+</article>
+<article id="q22" aria-labelledby="label22">
+<h2 id="label22">第 22 题</h2>
+<div class="stem"><p>若有int x=1,y=2;，执行下列程序段后，变量y的值是：（______）。</p>
+<pre><code>  switch (x) {
+    case 1: y++;
+    case 2: y = y+2;
+    case 3: y = y+3; break ;
+    default: y = y+4; break;
+  }</code></pre></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">3</span></li>
+<li><span class="letter">B.</span><span class="option">5</span></li>
+<li><span class="letter">C.</span><span class="option">8</span></li>
+<li><span class="letter">D.</span><span class="option">13</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2021年A场第3题</p>
+</article>
+<article id="q23" aria-labelledby="label23">
+<h2 id="label23">第 23 题</h2>
+<div class="stem"><p>下列程序片段运行后，输出结果是：（_____）。</p>
+<pre><code>  int a[5]={10,20,30,40,50}, *p = a;
+  p = p+4; 
+  printf(&quot;%d&quot;,*p);</code></pre></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">10</span></li>
+<li><span class="letter">B.</span><span class="option">14</span></li>
+<li><span class="letter">C.</span><span class="option">40</span></li>
+<li><span class="letter">D.</span><span class="option">50</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2021年A场第4题</p>
+</article>
+<article id="q24" aria-labelledby="label24">
+<h2 id="label24">第 24 题</h2>
+<div class="stem"><p class="topic">【相关性：专题2-学生成绩管理】</p>
+<p>结构体类型声明如下，希望声明student类型的结构体数组stu[N]，正确的声明语句是：(______）。</p>
+<pre><code>struct student{ 
+    int  number; 
+    char name[7];
+    float score[3];
+    float total;
+    int order;
+};</code></pre></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">struct student stu[N];</span></li>
+<li><span class="letter">B.</span><span class="option">typedef student stu[N];</span></li>
+<li><span class="letter">C.</span><span class="option">typedef struct stu[N];</span></li>
+<li><span class="letter">D.</span><span class="option">struct stu[N];</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2021年A场第5题</p>
+</article>
+<article id="q25" aria-labelledby="label25">
+<h2 id="label25">第 25 题</h2>
+<div class="stem"><p class="topic">【相关性：专题2-学生成绩管理】</p>
+<p>用顺序查找法从n个学生中寻找某个学生信息，如果能找到学生，查找中平均需要的比较次数是：（_____）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">0</span></li>
+<li><span class="letter">B.</span><span class="option">1</span></li>
+<li><span class="letter">C.</span><span class="option">n/2</span></li>
+<li><span class="letter">D.</span><span class="option">n</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2021年A场第6题</p>
+</article>
+<article id="q26" aria-labelledby="label26">
+<h2 id="label26">第 26 题</h2>
+<div class="stem"><p class="topic">【相关性：专题2-学生成绩管理】</p>
+<p>调用函数的时候，用数组名作为实参，传递的实际是：（____）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">数组中第一个元素的值</span></li>
+<li><span class="letter">B.</span><span class="option">数组中各个元素的值</span></li>
+<li><span class="letter">C.</span><span class="option">数组中第一个元素的地址</span></li>
+<li><span class="letter">D.</span><span class="option">数组中各个元素的地址</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2021年A场第7题</p>
+</article>
+<article id="q27" aria-labelledby="label27">
+<h2 id="label27">第 27 题</h2>
+<div class="stem"><p class="topic">【相关性：专题3-流调行程查询】</p>
+<p>行程卡查询过程中，记录了每位人员的流调信息，包括时间信息，其格式为：年-月-日-时-分-秒，如“20210711201314”，该字符串需要储存到字符数组time[]中，则数组的大小至少是：（______）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">13</span></li>
+<li><span class="letter">B.</span><span class="option">14</span></li>
+<li><span class="letter">C.</span><span class="option">15</span></li>
+<li><span class="letter">D.</span><span class="option">16</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2021年A场第8题</p>
+</article>
+<article id="q28" aria-labelledby="label28">
+<h2 id="label28">第 28 题</h2>
+<div class="stem"><p class="topic">【相关性：专题3-流调行程查询】</p>
+<p>设有语句：char time[]=&quot;20210711201314&quot;; int i, year=0; 要将字符串time中的前4个字符转化为对应的数值2021,正确的程序段是：（______）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">for(i=0;i&lt;4;i++) year=year*10+(time[i]-&#x27;0&#x27;);</span></li>
+<li><span class="letter">B.</span><span class="option">for(i=0;i&lt;4;i++) year=year*10+(time[i]+&#x27;0&#x27;);</span></li>
+<li><span class="letter">C.</span><span class="option">for(i=0;i&lt;4;i++) year=(year+(time[i]-&#x27;0&#x27;))*10;</span></li>
+<li><span class="letter">D.</span><span class="option">for(i=0;i&lt;4;i++) year=(year+(time[i]+&#x27;0&#x27;))*10;</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2021年A场第9题</p>
+</article>
+<article id="q29" aria-labelledby="label29">
+<h2 id="label29">第 29 题</h2>
+<div class="stem"><p class="topic">【相关性：专题3-流调行程查询】</p>
+<p>比较2个字符串s1和s2相等，正确的表达式是：（______）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">if (s1=s2)</span></li>
+<li><span class="letter">B.</span><span class="option">if (s1==s2)</span></li>
+<li><span class="letter">C.</span><span class="option">if (strcpy(s1,s2)==0)</span></li>
+<li><span class="letter">D.</span><span class="option">if (strcmp(s1,s2)==0)</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2021年A场第10题、2023年（10月）C场第3题</p>
+</article>
+<article id="q30" aria-labelledby="label30">
+<h2 id="label30">第 30 题</h2>
+<div class="stem"><p>以下选项中合法的变量名是：（_____）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">long</span></li>
+<li><span class="letter">B.</span><span class="option">_2Test</span></li>
+<li><span class="letter">C.</span><span class="option">3Dmax</span></li>
+<li><span class="letter">D.</span><span class="option">A.dat</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2021年B场第1题</p>
+</article>
+<article id="q31" aria-labelledby="label31">
+<h2 id="label31">第 31 题</h2>
+<div class="stem"><p>设有语句：char c;，为了确认变量c不是数字字符，正确的表达式是：（_____）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">(c&lt;0) &amp;&amp; (c&gt;9)</span></li>
+<li><span class="letter">B.</span><span class="option">(c&lt;&#x27;0&#x27;)&amp;&amp;(c&gt; &#x27;9&#x27;)</span></li>
+<li><span class="letter">C.</span><span class="option">(c&lt;&#x27;0&#x27;)||(c&gt;&#x27;9&#x27;)</span></li>
+<li><span class="letter">D.</span><span class="option">(c&lt;0)||(c&gt;9)</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2021年B场第2题</p>
+</article>
+<article id="q32" aria-labelledby="label32">
+<h2 id="label32">第 32 题</h2>
+<div class="stem"><p>设有以下声明，下列选项中，值不是3的是：（______）。</p>
+<pre><code>  int a[] = { 4, 3, 2, 1, 0 }, *p = a;</code></pre></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">a[1]</span></li>
+<li><span class="letter">B.</span><span class="option">*(a+1)</span></li>
+<li><span class="letter">C.</span><span class="option">*p+1</span></li>
+<li><span class="letter">D.</span><span class="option">*(p+1)</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2021年B场第4题</p>
+</article>
+<article id="q33" aria-labelledby="label33">
+<h2 id="label33">第 33 题</h2>
+<div class="stem"><p class="topic">【相关性：专题2-商品信息管理】</p>
+<p>以下语句或语句组中，正确的字符串赋值是：（______）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">char *sp; *sp=”right!”;</span></li>
+<li><span class="letter">B.</span><span class="option">char s[10]; s=”right!”;</span></li>
+<li><span class="letter">C.</span><span class="option">char s[10]; *s=”right!”;</span></li>
+<li><span class="letter">D.</span><span class="option">char *sp=”right!”;</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2021年B场第5题</p>
+</article>
+<article id="q34" aria-labelledby="label34">
+<h2 id="label34">第 34 题</h2>
+<div class="stem"><p class="topic">【相关性：专题2-商品信息管理】</p>
+<p>以&quot;a+&quot;方式打开一个已存在的文件，以下叙述正确的是：（______）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">文件打开时，原有文件内容不被删除，数据添加在文件末尾，可作添加和读操作</span></li>
+<li><span class="letter">B.</span><span class="option">文件打开时，原有文件内容不被删除，数据添加在文件开头，可作添加和读操作</span></li>
+<li><span class="letter">C.</span><span class="option">文件打开时，原有文件内容被删除，只可作写操作</span></li>
+<li><span class="letter">D.</span><span class="option">以上说法都不正确</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2021年B场第6题</p>
+</article>
+<article id="q35" aria-labelledby="label35">
+<h2 id="label35">第 35 题</h2>
+<div class="stem"><p class="topic">【相关性：专题3-奥运双人跳水计分】</p>
+<p>设有函数int sum(int a[],int n); 是对数组a中n个元素求累加和并返回，如果现在有一个数组是int x[10]，要计算x数组最后3个元素的累加和，正确的语句是：（______）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">s=sum(x,10);</span></li>
+<li><span class="letter">B.</span><span class="option">s=sum(x+3,7);</span></li>
+<li><span class="letter">C.</span><span class="option">s=sum(x+7,3);</span></li>
+<li><span class="letter">D.</span><span class="option">以上3个都不正确</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2021年B场第7题</p>
+</article>
+<article id="q36" aria-labelledby="label36">
+<h2 id="label36">第 36 题</h2>
+<div class="stem"><p class="topic">【相关性：专题3-奥运双人跳水计分】</p>
+<p>设有声明float x, y;要判断x与y是否相等（精度0.01下），正确的判断是：（______）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">(x==y)</span></li>
+<li><span class="letter">B.</span><span class="option">(x-y==0)</span></li>
+<li><span class="letter">C.</span><span class="option">(int)x==(int)y</span></li>
+<li><span class="letter">D.</span><span class="option">(int)(100*x+0.5)==(int)(100*y+0.5)</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2021年B场第8题</p>
+</article>
+<article id="q37" aria-labelledby="label37">
+<h2 id="label37">第 37 题</h2>
+<div class="stem"><p class="topic">【相关性：专题3-奥运双人跳水计分】</p>
+<p>设有如下结构体嵌套及变量声明，要得到第i个比赛队在第j轮跳水的难度系数（i与j均对应数组下标），正确的表达式是：（______）。</p>
+<pre><code>    struct diveInfo
+    { //运动员组合（比赛队）信息
+        char team[8];       //所在赛队名称
+        struct roundInfo
+        { //某轮跳水信息
+            float diff;       //难度系数
+            float judge[11];  //11个裁判打分
+            float score;      //跳水得分
+        } r[6]; //最多6轮跳水
+    } d[8];     //最多8个运动员组合</code></pre></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">d[i].r[j].diff</span></li>
+<li><span class="letter">B.</span><span class="option">d[i][j].diff</span></li>
+<li><span class="letter">C.</span><span class="option">d[j].r[i].diff</span></li>
+<li><span class="letter">D.</span><span class="option">d[j][i].diff</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2021年B场第9题</p>
+</article>
+<article id="q38" aria-labelledby="label38">
+<h2 id="label38">第 38 题</h2>
+<div class="stem"><p class="topic">【相关性：专题3-奥运双人跳水计分】</p>
+<p>请阅读“C:\素材”下“专题3-奥运双人跳水计分”，理解双人跳水打分规则。</p>
+<p>奥运比赛时，设某运动员组合在双人跳水动作完成后，11位裁判中前6位打分依次是“4.5  5.0  4.0  7.5  7.0  7.0”，则可能的情况是：（______）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">双人中2位选手都正常发挥</span></li>
+<li><span class="letter">B.</span><span class="option">双人中2位选手都跳“砸”了</span></li>
+<li><span class="letter">C.</span><span class="option">双人中的第1位选手跳“砸”了</span></li>
+<li><span class="letter">D.</span><span class="option">裁判打分明显“乱打”</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2021年B场第10题</p>
+</article>
+<article id="q39" aria-labelledby="label39">
+<h2 id="label39">第 39 题</h2>
+<div class="stem"><p>C语言中，可以使用的变量名是：（______）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">2021-nCov</span></li>
+<li><span class="letter">B.</span><span class="option">while</span></li>
+<li><span class="letter">C.</span><span class="option">student.name</span></li>
+<li><span class="letter">D.</span><span class="option">_temp</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2021年C场第1题</p>
+</article>
+<article id="q40" aria-labelledby="label40">
+<h2 id="label40">第 40 题</h2>
+<div class="stem"><p>设有定义：int x; 与 if(x) 功能相同的是：（_____）</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">if (x&gt;=0)</span></li>
+<li><span class="letter">B.</span><span class="option">if (x&gt;0)</span></li>
+<li><span class="letter">C.</span><span class="option">if (x!=0)</span></li>
+<li><span class="letter">D.</span><span class="option">if (x==0)</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2021年C场第2题</p>
+</article>
+<article id="q41" aria-labelledby="label41">
+<h2 id="label41">第 41 题</h2>
+<div class="stem"><p>设有定义: char a=&#x27;C&#x27;; 以下代码段的输出结果是：（_____）</p>
+<pre><code>  switch(a) 
+  {  
+    case &#x27;A&#x27;: a++; break;
+    case &#x27;B&#x27;: a++; break;
+    case &#x27;C&#x27;: a++;
+    default: a++;
+  }      
+  printf(&quot;%c&quot;,a);</code></pre></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">C</span></li>
+<li><span class="letter">B.</span><span class="option">D</span></li>
+<li><span class="letter">C.</span><span class="option">E</span></li>
+<li><span class="letter">D.</span><span class="option">F</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2021年C场第3题</p>
+</article>
+<article id="q42" aria-labelledby="label42">
+<h2 id="label42">第 42 题</h2>
+<div class="stem"><p>下列选项中，对数组正确的赋值或赋初值的方式是：（_____）</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">int d[2][3]={1,2,3,4,5,6,7};</span></li>
+<li><span class="letter">B.</span><span class="option">int d[3][2]={1,2,3,4};</span></li>
+<li><span class="letter">C.</span><span class="option">int d[3][]={16,10,4};</span></li>
+<li><span class="letter">D.</span><span class="option">int d[][]={16,10,4};</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2021年C场第4题</p>
+</article>
+<article id="q43" aria-labelledby="label43">
+<h2 id="label43">第 43 题</h2>
+<div class="stem"><p>以下代码段是函数add的定义，函数返回值是：（_____）</p>
+<pre><code>  add(int a, float b) 
+  { return a+b; }</code></pre></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">没有返回值</span></li>
+<li><span class="letter">B.</span><span class="option">一个整数</span></li>
+<li><span class="letter">C.</span><span class="option">一个浮点数</span></li>
+<li><span class="letter">D.</span><span class="option">不确定的值</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2021年C场第5题</p>
+</article>
+<article id="q44" aria-labelledby="label44">
+<h2 id="label44">第 44 题</h2>
+<div class="stem"><p>根据下列代码，正确的结构体成员引用是（______）。</p>
+<pre><code>  typedef struct student
+  {
+    int number;
+    char name[20];
+    float score;
+  } STUDENT;
+  STUDENT stu = {28, &quot;李华&quot;, 80.0};</code></pre></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">stu.score</span></li>
+<li><span class="letter">B.</span><span class="option">STUDENT.score</span></li>
+<li><span class="letter">C.</span><span class="option">stu-&gt;score</span></li>
+<li><span class="letter">D.</span><span class="option">STUDENT-&gt;score</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2021年C场第6题</p>
+</article>
+<article id="q45" aria-labelledby="label45">
+<h2 id="label45">第 45 题</h2>
+<div class="stem"><p class="topic">【相关性：专题2-社团报名信息管理】</p>
+<p>以下代码段的运行结果是：（______）。</p>
+<pre><code>int x=2019;
+void fun(int *x) {*x=2020;}
+int main()
+{   int a=2021, *p;  
+    p=&amp;a;  
+    fun(p);  
+    printf(&quot;%d&quot;,a);   }</code></pre></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">2019</span></li>
+<li><span class="letter">B.</span><span class="option">2020</span></li>
+<li><span class="letter">C.</span><span class="option">2021</span></li>
+<li><span class="letter">D.</span><span class="option">不确定的值</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2021年C场第7题</p>
+</article>
+<article id="q46" aria-labelledby="label46">
+<h2 id="label46">第 46 题</h2>
+<div class="stem"><p class="topic">【相关性：专题2-社团报名信息管理】</p>
+<p>fscanf函数的正确调用形式是：（______）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">fscanf (文件名, 格式字符串, 输入表列);</span></li>
+<li><span class="letter">B.</span><span class="option">fscanf (格式字符串, 输入表列, 文件名);</span></li>
+<li><span class="letter">C.</span><span class="option">fscanf (格式字符串, 文件指针, 输入表列);</span></li>
+<li><span class="letter">D.</span><span class="option">fscanf(文件指针, 格式字符串, 输入表列);</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2021年C场第8题</p>
+</article>
+<article id="q47" aria-labelledby="label47">
+<h2 id="label47">第 47 题</h2>
+<div class="stem"><p class="topic">【相关性：专题3-中英文词典应用】</p>
+<p>假设一个最长的英文单词word中不超过20个字母，则word最适合的声明为：（_____）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">char word[20];</span></li>
+<li><span class="letter">B.</span><span class="option">char word[21];</span></li>
+<li><span class="letter">C.</span><span class="option">char word[1000];</span></li>
+<li><span class="letter">D.</span><span class="option">char word;</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2021年C场第9题</p>
+</article>
+<article id="q48" aria-labelledby="label48">
+<h2 id="label48">第 48 题</h2>
+<div class="stem"><p class="topic">【相关性：专题3-中英文词典应用】</p>
+<p>假设有如下的定义和声明：</p>
+<pre><code>struct word
+{
+	char english[30];
+	char chinese[30];
+};
+struct word  w;</code></pre>
+<p>若希望将“apple”存储于变量w 的english成员中，正确的执行语句是：（_____）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">strcpy(word.english,&quot;apple&quot;);</span></li>
+<li><span class="letter">B.</span><span class="option">strcpy(w.english,&quot;apple&quot;);</span></li>
+<li><span class="letter">C.</span><span class="option">word.english=&quot;apple&quot;;</span></li>
+<li><span class="letter">D.</span><span class="option">w.english=&quot;apple&quot;;</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2021年C场第10题</p>
+</article>
+<article id="q49" aria-labelledby="label49">
+<h2 id="label49">第 49 题</h2>
+<div class="stem"><p>下列用户定义的标识符中，正确的是：（_____）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">2ab</span></li>
+<li><span class="letter">B.</span><span class="option">ab2</span></li>
+<li><span class="letter">C.</span><span class="option">int</span></li>
+<li><span class="letter">D.</span><span class="option">-ab</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年A场第1题</p>
+</article>
+<article id="q50" aria-labelledby="label50">
+<h2 id="label50">第 50 题</h2>
+<div class="stem"><p>设有定义：char ch=&#x27;B&#x27;; 则表达式&#x27;a&#x27;&lt;=ch&lt;=&#x27;z&#x27;的值是：（_____）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">0</span></li>
+<li><span class="letter">B.</span><span class="option">1</span></li>
+<li><span class="letter">C.</span><span class="option">&#x27;B&#x27;</span></li>
+<li><span class="letter">D.</span><span class="option">不确定</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年A场第2题</p>
+</article>
+<article id="q51" aria-labelledby="label51">
+<h2 id="label51">第 51 题</h2>
+<div class="stem"><p>字符串输入函数的函数名是：（_____）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">getchar</span></li>
+<li><span class="letter">B.</span><span class="option">putchar</span></li>
+<li><span class="letter">C.</span><span class="option">gets</span></li>
+<li><span class="letter">D.</span><span class="option">puts</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年A场第3题</p>
+</article>
+<article id="q52" aria-labelledby="label52">
+<h2 id="label52">第 52 题</h2>
+<div class="stem"><p class="topic">【提示：本小题与&quot;专题3应用-中文数字&quot;有一定关联性】</p>
+<p>中文汉字中有“万亿兆京垓秭穣沟涧正载极”等计数单位，为尽可能表示更大的数字，古代“上数法”定义各单位的换算关系为“数穷则变”，即1万万=1亿，1亿亿=1兆，1兆兆=1京, 1京京=1垓，以此类推。那么，按“上数法”，1垓等于（_____）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">1亿</span></li>
+<li><span class="letter">B.</span><span class="option">1亿亿</span></li>
+<li><span class="letter">C.</span><span class="option">1亿亿亿亿</span></li>
+<li><span class="letter">D.</span><span class="option">1亿亿亿亿亿亿亿亿</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年A场第4题</p>
+</article>
+<article id="q53" aria-labelledby="label53">
+<h2 id="label53">第 53 题</h2>
+<div class="stem"><p>执行下列程序段后，输出结果是：（_____）。</p>
+<pre><code>  int i, j=20;
+  for (i=0; i&lt;=4; i++);
+  printf(&quot;%d\n&quot;, i+j);</code></pre></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">4</span></li>
+<li><span class="letter">B.</span><span class="option">5</span></li>
+<li><span class="letter">C.</span><span class="option">24</span></li>
+<li><span class="letter">D.</span><span class="option">25</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年A场第5题</p>
+</article>
+<article id="q54" aria-labelledby="label54">
+<h2 id="label54">第 54 题</h2>
+<div class="stem"><p>若有定义int  a[4][3]; 则下列描述中，错误的是：（_____）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">定义了一个名为a的二维数组</span></li>
+<li><span class="letter">B.</span><span class="option">a数组共有12个元素</span></li>
+<li><span class="letter">C.</span><span class="option">a数组的行下标为1~4，列下标为1~3</span></li>
+<li><span class="letter">D.</span><span class="option">a数组中的每个元素都为整数</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年A场第6题</p>
+</article>
+<article id="q55" aria-labelledby="label55">
+<h2 id="label55">第 55 题</h2>
+<div class="stem"><p>设有char s[20]= &quot;China&quot;; 则函数strlen(&quot;China&quot;)的值是：（_____）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">5</span></li>
+<li><span class="letter">B.</span><span class="option">6</span></li>
+<li><span class="letter">C.</span><span class="option">20</span></li>
+<li><span class="letter">D.</span><span class="option">不确定</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年A场第7题</p>
+</article>
+<article id="q56" aria-labelledby="label56">
+<h2 id="label56">第 56 题</h2>
+<div class="stem"><p>关于函数的参数，下列描述中，正确的是：（_____）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">函数的参数是全局变量</span></li>
+<li><span class="letter">B.</span><span class="option">函数的参数是静态变量</span></li>
+<li><span class="letter">C.</span><span class="option">函数的参数是局部变量</span></li>
+<li><span class="letter">D.</span><span class="option">函数的参数是外部变量</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年A场第8题</p>
+</article>
+<article id="q57" aria-labelledby="label57">
+<h2 id="label57">第 57 题</h2>
+<div class="stem"><p>设有以下定义， 则结构体成员的访问中，正确的是：（_____）。</p>
+<pre><code>struct student
+{
+  int no;
+  char name[20];
+} s;</code></pre></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">student.no=1111;</span></li>
+<li><span class="letter">B.</span><span class="option">s-&gt;no=1111;</span></li>
+<li><span class="letter">C.</span><span class="option">strcpy(s.name, &quot;John&quot;);</span></li>
+<li><span class="letter">D.</span><span class="option">s.name=&quot;John&quot;;</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年A场第9题</p>
+</article>
+<article id="q58" aria-labelledby="label58">
+<h2 id="label58">第 58 题</h2>
+<div class="stem"><p>设有以下程序段，</p>
+<pre><code>char s[] = &quot;china&quot;;
+char *p;
+p = s;</code></pre>
+<p>则下列描述中，正确的是：（_____）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">s和p完全相同</span></li>
+<li><span class="letter">B.</span><span class="option">数组s中的内容和指针变量p中的内容相等</span></li>
+<li><span class="letter">C.</span><span class="option">s数组长度和p所指向的字符串长度相等</span></li>
+<li><span class="letter">D.</span><span class="option">*p与s[0]相等</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年A场第10题</p>
+</article>
+<article id="q59" aria-labelledby="label59">
+<h2 id="label59">第 59 题</h2>
+<div class="stem"><p>下列用户定义的标识符中, 错误的是：（_____）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">For</span></li>
+<li><span class="letter">B.</span><span class="option">Printf</span></li>
+<li><span class="letter">C.</span><span class="option">WORD</span></li>
+<li><span class="letter">D.</span><span class="option">sizeof</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年B场第1题</p>
+</article>
+<article id="q60" aria-labelledby="label60">
+<h2 id="label60">第 60 题</h2>
+<div class="stem"><p>设有定义： int x=5,y=5,z=5；执行语句x%=y+z；后，x的值是：（_____）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">6</span></li>
+<li><span class="letter">B.</span><span class="option">1</span></li>
+<li><span class="letter">C.</span><span class="option">5</span></li>
+<li><span class="letter">D.</span><span class="option">0</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年B场第2题</p>
+</article>
+<article id="q61" aria-labelledby="label61">
+<h2 id="label61">第 61 题</h2>
+<div class="stem"><p>计算平方根的专有函数名称是：（_____）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">cos</span></li>
+<li><span class="letter">B.</span><span class="option">abs</span></li>
+<li><span class="letter">C.</span><span class="option">pow</span></li>
+<li><span class="letter">D.</span><span class="option">sqrt</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年B场第3题</p>
+</article>
+<article id="q62" aria-labelledby="label62">
+<h2 id="label62">第 62 题</h2>
+<div class="stem"><p>设有 int n; 判断n为二位正整数，正确的表达式是：（_____）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">10&lt;=n&lt;=99</span></li>
+<li><span class="letter">B.</span><span class="option">10&lt;=n || n&lt;=99</span></li>
+<li><span class="letter">C.</span><span class="option">10&lt;=n, n&lt;=99</span></li>
+<li><span class="letter">D.</span><span class="option">10&lt;=n &amp;&amp; n&lt;=99</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年B场第4题</p>
+</article>
+<article id="q63" aria-labelledby="label63">
+<h2 id="label63">第 63 题</h2>
+<div class="stem"><p>执行下列程序段后，输出结果是：（_____）。</p>
+<pre><code>int  y=10;
+while(y--);
+printf(&quot;y=%d\n&quot;,y);</code></pre></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">y=0</span></li>
+<li><span class="letter">B.</span><span class="option">while构成无限循环</span></li>
+<li><span class="letter">C.</span><span class="option">y=1</span></li>
+<li><span class="letter">D.</span><span class="option">y=-1</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年B场第5题</p>
+</article>
+<article id="q64" aria-labelledby="label64">
+<h2 id="label64">第 64 题</h2>
+<div class="stem"><p>下列二维数组定义中, 错误的是：（_____）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">int a[2][3];</span></li>
+<li><span class="letter">B.</span><span class="option">int b[][3]={0,1,2,3};</span></li>
+<li><span class="letter">C.</span><span class="option">int c[100][100]={0};</span></li>
+<li><span class="letter">D.</span><span class="option">int d[3][]={{1,2},{1,2,3},{1,2,3,4}};</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年B场第6题</p>
+</article>
+<article id="q65" aria-labelledby="label65">
+<h2 id="label65">第 65 题</h2>
+<div class="stem"><p class="topic">【提示：本小题与“专题2数据-用户登录日志”有一定关联性】</p>
+<p>将字符串 &quot;abcd&quot; 赋给字符数组 char a[10]，正确的赋值语句是：（_____）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">strcpy(a,&quot;abcd&quot;);</span></li>
+<li><span class="letter">B.</span><span class="option">strcpy(a[10],&quot;abcd&quot;);</span></li>
+<li><span class="letter">C.</span><span class="option">a=&quot;abcd&quot;;</span></li>
+<li><span class="letter">D.</span><span class="option">a[10]=&quot;abcd&quot;;</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年B场第7题</p>
+</article>
+<article id="q66" aria-labelledby="label66">
+<h2 id="label66">第 66 题</h2>
+<div class="stem"><p>凡是函数中未指定存储类别的局部变量, 其默认的存储类别是：（_____）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">自动(auto)</span></li>
+<li><span class="letter">B.</span><span class="option">静态(static)</span></li>
+<li><span class="letter">C.</span><span class="option">外部(extern)</span></li>
+<li><span class="letter">D.</span><span class="option">寄存器(register)</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年B场第8题</p>
+</article>
+<article id="q67" aria-labelledby="label67">
+<h2 id="label67">第 67 题</h2>
+<div class="stem"><p>设有下列定义，则对&quot;Mary&quot;的访问，正确的是：（_____）。</p>
+<pre><code>struct person
+{
+  char name[9];
+  int age;
+} p[10] = {{&quot;John&quot;,17},{&quot;paul&quot;,19},{&quot;Mary&quot;,18},{&quot;Adam&quot;,16}};</code></pre></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">person[2].name</span></li>
+<li><span class="letter">B.</span><span class="option">person[3].name</span></li>
+<li><span class="letter">C.</span><span class="option">p[3].name</span></li>
+<li><span class="letter">D.</span><span class="option">p[2].name</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年B场第9题</p>
+</article>
+<article id="q68" aria-labelledby="label68">
+<h2 id="label68">第 68 题</h2>
+<div class="stem"><p>若已定义 int x; 下列语句中，正确的是：（_____）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">p=&amp;x;</span></li>
+<li><span class="letter">B.</span><span class="option">int *p=x;</span></li>
+<li><span class="letter">C.</span><span class="option">int *p=&amp;x;</span></li>
+<li><span class="letter">D.</span><span class="option">*p=*x;</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年B场第10题</p>
+</article>
+<article id="q69" aria-labelledby="label69">
+<h2 id="label69">第 69 题</h2>
+<div class="stem"><p>下列用户定义的标识符中，正确的是：（_____）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">3ab</span></li>
+<li><span class="letter">B.</span><span class="option">_isw</span></li>
+<li><span class="letter">C.</span><span class="option">float</span></li>
+<li><span class="letter">D.</span><span class="option">b-bwhile</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年C场第1题</p>
+</article>
+<article id="q70" aria-labelledby="label70">
+<h2 id="label70">第 70 题</h2>
+<div class="stem"><p>设有定义：int x=20; 则表达式0&lt;=x&lt;=10的值是：（_____）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">0</span></li>
+<li><span class="letter">B.</span><span class="option">10</span></li>
+<li><span class="letter">C.</span><span class="option">1</span></li>
+<li><span class="letter">D.</span><span class="option">20</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年C场第2题</p>
+</article>
+<article id="q71" aria-labelledby="label71">
+<h2 id="label71">第 71 题</h2>
+<div class="stem"><p>字符串比较函数的函数名是：（_____）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">strcpy</span></li>
+<li><span class="letter">B.</span><span class="option">strlen</span></li>
+<li><span class="letter">C.</span><span class="option">strcmp</span></li>
+<li><span class="letter">D.</span><span class="option">strcat</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年C场第3题</p>
+</article>
+<article id="q72" aria-labelledby="label72">
+<h2 id="label72">第 72 题</h2>
+<div class="stem"><p>设有定义 int a, n; 判断 a 是一个偶数，正确的表达式是：（_____）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">a==2*n</span></li>
+<li><span class="letter">B.</span><span class="option">a/2==0</span></li>
+<li><span class="letter">C.</span><span class="option">a%2=0</span></li>
+<li><span class="letter">D.</span><span class="option">a%2==0</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年C场第4题</p>
+</article>
+<article id="q73" aria-labelledby="label73">
+<h2 id="label73">第 73 题</h2>
+<div class="stem"><p>执行下列程序段后，输出的“*”号个数是：（_____）。</p>
+<pre><code>int loop1 = 0;
+while (loop1=0) {
+  printf(&quot;*&quot;);
+}</code></pre></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">无限个</span></li>
+<li><span class="letter">B.</span><span class="option">2个</span></li>
+<li><span class="letter">C.</span><span class="option">1个</span></li>
+<li><span class="letter">D.</span><span class="option">0个</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年C场第5题</p>
+</article>
+<article id="q74" aria-labelledby="label74">
+<h2 id="label74">第 74 题</h2>
+<div class="stem"><p>若有定义int  a[3][4]; 则下列a数组元素引用中，错误的是：（_____）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">a[0][2*1]</span></li>
+<li><span class="letter">B.</span><span class="option">a[1][3]</span></li>
+<li><span class="letter">C.</span><span class="option">a[4-2][0]</span></li>
+<li><span class="letter">D.</span><span class="option">a[0][4]</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年C场第6题</p>
+</article>
+<article id="q75" aria-labelledby="label75">
+<h2 id="label75">第 75 题</h2>
+<div class="stem"><p>设有char str[80]; 则下列输入字符串的语句中，正确的是：（_____）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">scanf(&quot;%s&quot;,*str);</span></li>
+<li><span class="letter">B.</span><span class="option">scanf(&quot;%s&quot;,str[80]);</span></li>
+<li><span class="letter">C.</span><span class="option">scanf(&quot;%s&quot;,str);</span></li>
+<li><span class="letter">D.</span><span class="option">scanf(&quot;%s&quot;,str[0]);</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年C场第7题</p>
+</article>
+<article id="q76" aria-labelledby="label76">
+<h2 id="label76">第 76 题</h2>
+<div class="stem"><p>关于函数的描述中，正确的是：（_____）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">主函数可以直接调用其他函数内部定义的变量</span></li>
+<li><span class="letter">B.</span><span class="option">函数内部定义变量时必须进行初始化</span></li>
+<li><span class="letter">C.</span><span class="option">函数不可以直接调用其他函数内部定义的变量</span></li>
+<li><span class="letter">D.</span><span class="option">函数内部定义变量时若没有进行初始化，则其值是固定的</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年C场第8题</p>
+</article>
+<article id="q77" aria-labelledby="label77">
+<h2 id="label77">第 77 题</h2>
+<div class="stem"><p>设有下列定义，则将数组p最后一个元素的name成员置为&quot;John&quot;，正确的是：（_____）。</p>
+<pre><code>struct person
+{
+  char name[9];
+  int age;
+} p[10];</code></pre></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">strcpy(p[10].name, &quot;John&quot;)</span></li>
+<li><span class="letter">B.</span><span class="option">strcpy(p[9].name, &quot;John&quot;)</span></li>
+<li><span class="letter">C.</span><span class="option">p[10].name=&quot;John&quot;</span></li>
+<li><span class="letter">D.</span><span class="option">p[9].name=&quot;John&quot;</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年C场第9题</p>
+</article>
+<article id="q78" aria-labelledby="label78">
+<h2 id="label78">第 78 题</h2>
+<div class="stem"><p>设有定义char *p1;int *p2; double *p3; 则变量p1,p2,p3所占的空间字节数，分别是：（_____）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">1,2,4</span></li>
+<li><span class="letter">B.</span><span class="option">1,4,8</span></li>
+<li><span class="letter">C.</span><span class="option">4,4,4</span></li>
+<li><span class="letter">D.</span><span class="option">2,4,4</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年C场第10题</p>
+</article>
+<article id="q79" aria-labelledby="label79">
+<h2 id="label79">第 79 题</h2>
+<div class="stem"><p>下列用户定义的标识符中，错误的是：（_____）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">char1</span></li>
+<li><span class="letter">B.</span><span class="option">FLOAT</span></li>
+<li><span class="letter">C.</span><span class="option">_2ab</span></li>
+<li><span class="letter">D.</span><span class="option">a-b</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年D场第1题</p>
+</article>
+<article id="q80" aria-labelledby="label80">
+<h2 id="label80">第 80 题</h2>
+<div class="stem"><p>设有定义：double x = 3.1416;	则表达式(int)(1000*x+0.5)/1000.0的值是：（_____）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">3.142</span></li>
+<li><span class="letter">B.</span><span class="option">3.141</span></li>
+<li><span class="letter">C.</span><span class="option">3.15</span></li>
+<li><span class="letter">D.</span><span class="option">3.14</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年D场第2题</p>
+</article>
+<article id="q81" aria-labelledby="label81">
+<h2 id="label81">第 81 题</h2>
+<div class="stem"><p>数学函数所在的头文件名是：（_____）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">stdio.h</span></li>
+<li><span class="letter">B.</span><span class="option">math.h</span></li>
+<li><span class="letter">C.</span><span class="option">time.h</span></li>
+<li><span class="letter">D.</span><span class="option">string.h</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年D场第3题</p>
+</article>
+<article id="q82" aria-labelledby="label82">
+<h2 id="label82">第 82 题</h2>
+<div class="stem"><p>设有定义：char ch;  下列判断ch是数字字符的表达式中，正确的是：（_____）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">ch&gt;=&#x27;0&#x27; &amp;&amp; ch&lt;=&#x27;9&#x27;</span></li>
+<li><span class="letter">B.</span><span class="option">ch&gt;=&#x27;0&#x27; &amp;&amp; ch&lt;&#x27;10&#x27;</span></li>
+<li><span class="letter">C.</span><span class="option">ch&gt;=0 &amp;&amp; ch&lt;=9</span></li>
+<li><span class="letter">D.</span><span class="option">ch&gt;=&#x27;0&#x27; || ch&lt;=&#x27;9&#x27;</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年D场第4题</p>
+</article>
+<article id="q83" aria-labelledby="label83">
+<h2 id="label83">第 83 题</h2>
+<div class="stem"><p>执行下列程序段后， sum的值是：（_____）</p>
+<pre><code>int x, sum;  
+for(x=1; x&lt;5; x++)	
+       sum+=x;</code></pre></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">0</span></li>
+<li><span class="letter">B.</span><span class="option">10</span></li>
+<li><span class="letter">C.</span><span class="option">15</span></li>
+<li><span class="letter">D.</span><span class="option">不确定</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年D场第5题</p>
+</article>
+<article id="q84" aria-labelledby="label84">
+<h2 id="label84">第 84 题</h2>
+<div class="stem"><p>下列二维数组定义中, 正确的是：（_____）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">int a[2][3] = {{1,2}, {3,4}, {5,6}};</span></li>
+<li><span class="letter">B.</span><span class="option">int a[][3] = {1,2,3,4,5,6};</span></li>
+<li><span class="letter">C.</span><span class="option">int a[2][] = {1,2,3,4,5,6};</span></li>
+<li><span class="letter">D.</span><span class="option">int a[2][] = {{1,2},{3,4}};</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年D场第6题</p>
+</article>
+<article id="q85" aria-labelledby="label85">
+<h2 id="label85">第 85 题</h2>
+<div class="stem"><p>设有char s[100] = &quot;Happy new year&quot;; 则函数puts(s + 2)的值是：（_____）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">p</span></li>
+<li><span class="letter">B.</span><span class="option">year</span></li>
+<li><span class="letter">C.</span><span class="option">ppy new year</span></li>
+<li><span class="letter">D.</span><span class="option">有语法错误</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年D场第7题</p>
+</article>
+<article id="q86" aria-labelledby="label86">
+<h2 id="label86">第 86 题</h2>
+<div class="stem"><p>关于函数的返回值，下列描述中，正确的是：（_____）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">在函数体中可以没有return语句，也可以有多个return语句</span></li>
+<li><span class="letter">B.</span><span class="option">函数可以同时返回2个或2个以上的值</span></li>
+<li><span class="letter">C.</span><span class="option">定义函数时若省略返回值类型，则默认为void</span></li>
+<li><span class="letter">D.</span><span class="option">返回值的类型由return语句中的表达式的类型来决定</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年D场第8题</p>
+</article>
+<article id="q87" aria-labelledby="label87">
+<h2 id="label87">第 87 题</h2>
+<div class="stem"><p>设有下列定义，则将变量s的出生年份year设置为2002，正确的是：（_____）。</p>
+<pre><code>struct student
+{  
+  int no;
+  char name［20］;
+  struct
+  { 
+    int year,month,day;
+  } birth;
+} s;</code></pre></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">s.year=2002;</span></li>
+<li><span class="letter">B.</span><span class="option">year=2002;</span></li>
+<li><span class="letter">C.</span><span class="option">student.birth.year=2002;</span></li>
+<li><span class="letter">D.</span><span class="option">s.birth.year=2002;</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年D场第9题</p>
+</article>
+<article id="q88" aria-labelledby="label88">
+<h2 id="label88">第 88 题</h2>
+<div class="stem"><p>设有定义 int b[ ]={1,2,3,4},y,*p = b;</p>
+<p>则执行语句“y=*p++;”后，变量 y 的值是：（_____）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">1</span></li>
+<li><span class="letter">B.</span><span class="option">2</span></li>
+<li><span class="letter">C.</span><span class="option">3</span></li>
+<li><span class="letter">D.</span><span class="option">4</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年D场第10题</p>
+</article>
+<article id="q89" aria-labelledby="label89">
+<h2 id="label89">第 89 题</h2>
+<div class="stem"><p>下列选项中，错误的转义字符是：（_____）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">‘\n’</span></li>
+<li><span class="letter">B.</span><span class="option">‘\r’</span></li>
+<li><span class="letter">C.</span><span class="option">‘\108’</span></li>
+<li><span class="letter">D.</span><span class="option">‘\x3A’</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年（10月）A场第1题</p>
+</article>
+<article id="q90" aria-labelledby="label90">
+<h2 id="label90">第 90 题</h2>
+<div class="stem"><p>在一款名为“魔塔”的游戏中，假设勇士的攻击力为10，怪物的防御力为2，则勇士攻击怪物时，每个回合可造成怪物8点（勇士的攻击力减去怪物的防御力）的失血伤害；再设怪物的生命值为70点血量，则勇士需要经过（____）个回合才能消灭掉怪物，回合数的计算公式是：（____）。</p>
+<p>注1：消灭掉怪物即是怪物的生命值（血量）减至0或以下。</p>
+<p>注2：ceil()为向上取整函数，更详细的信息，参考素材目录下的常用库函数文件。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">8回合，(int)(70.0/(10-2))</span></li>
+<li><span class="letter">B.</span><span class="option">9回合，(int)(70.0/(10-2))</span></li>
+<li><span class="letter">C.</span><span class="option">8回合，ceil(70.0/(10-2))</span></li>
+<li><span class="letter">D.</span><span class="option">9回合，ceil(70.0/(10-2))</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年（10月）A场第2题</p>
+</article>
+<article id="q91" aria-labelledby="label91">
+<h2 id="label91">第 91 题</h2>
+<div class="stem"><p>要判断char型变量m是否是数字字符，下列表达式中，正确的是：（_____）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">0&lt;=m &amp;&amp; m&lt;=9</span></li>
+<li><span class="letter">B.</span><span class="option">m&gt;=&#x27;0&#x27; &amp;&amp; m&lt;=&#x27;9&#x27;</span></li>
+<li><span class="letter">C.</span><span class="option">&quot;0&quot;&lt;=m || m&lt;=&quot;9&quot;</span></li>
+<li><span class="letter">D.</span><span class="option">&#x27;0&#x27;&lt;=m &lt;=&#x27;9&#x27;</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年（10月）A场第3题</p>
+</article>
+<article id="q92" aria-labelledby="label92">
+<h2 id="label92">第 92 题</h2>
+<div class="stem"><p>执行下列程序段后，输出结果是：（_____）。</p>
+<pre><code>int x=3,y=2;
+if(x+y=5) printf(&quot;+++++&quot;); 
+else printf(&quot;*****&quot;);</code></pre></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">+++++</span></li>
+<li><span class="letter">B.</span><span class="option">*****</span></li>
+<li><span class="letter">C.</span><span class="option">有语法错误，不能编译</span></li>
+<li><span class="letter">D.</span><span class="option">能通过编译，但不能连接生成执行文件</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年（10月）A场第4题</p>
+</article>
+<article id="q93" aria-labelledby="label93">
+<h2 id="label93">第 93 题</h2>
+<div class="stem"><p>设有定义：int i=10;  则循环语句：while(i--&gt;5);  循环次数是：（_____）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">4</span></li>
+<li><span class="letter">B.</span><span class="option">5</span></li>
+<li><span class="letter">C.</span><span class="option">6</span></li>
+<li><span class="letter">D.</span><span class="option">7</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年（10月）A场第5题</p>
+</article>
+<article id="q94" aria-labelledby="label94">
+<h2 id="label94">第 94 题</h2>
+<div class="stem"><p>下列一维数组定义中，正确的是：（_____）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">int a[5]=( );</span></li>
+<li><span class="letter">B.</span><span class="option">int a[10]={0,7,0,4,8};</span></li>
+<li><span class="letter">C.</span><span class="option">int a[5]=(9,5,7,4,0);</span></li>
+<li><span class="letter">D.</span><span class="option">int a[10]=10*5;</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年（10月）A场第6题</p>
+</article>
+<article id="q95" aria-labelledby="label95">
+<h2 id="label95">第 95 题</h2>
+<div class="stem"><p>执行下列语句后，输出结果是：（_____）。</p>
+<pre><code>void fun (int a,int b,int c)
+{ a=4; b=5; c=6;}
+int main()
+{int x=1, y=2,z=3;
+ fun (x,y,z);
+ printf(&quot;%d,%d,%d&quot;,x,y,z);
+ return 0;
+}</code></pre></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">3，2，1</span></li>
+<li><span class="letter">B.</span><span class="option">1，2，3</span></li>
+<li><span class="letter">C.</span><span class="option">4，5，6</span></li>
+<li><span class="letter">D.</span><span class="option">6，5，4</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年（10月）A场第7题</p>
+</article>
+<article id="q96" aria-labelledby="label96">
+<h2 id="label96">第 96 题</h2>
+<div class="stem"><p>C语言程序中，调用exp函数时，需要使用include命令包含的库文件，是：（_____）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">#include&lt;stdio.h&gt;</span></li>
+<li><span class="letter">B.</span><span class="option">#include&lt;math.h&gt;</span></li>
+<li><span class="letter">C.</span><span class="option">#include&lt;string.h&gt;</span></li>
+<li><span class="letter">D.</span><span class="option">#include&lt;io.h&gt;</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年（10月）A场第8题</p>
+</article>
+<article id="q97" aria-labelledby="label97">
+<h2 id="label97">第 97 题</h2>
+<div class="stem"><p>设有定义：int  x, *pb;  则下列表达式中，正确的是：（_____）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">pb=&amp;x</span></li>
+<li><span class="letter">B.</span><span class="option">pb=x</span></li>
+<li><span class="letter">C.</span><span class="option">*pb=&amp;x</span></li>
+<li><span class="letter">D.</span><span class="option">*pb=*x</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年（10月）A场第9题</p>
+</article>
+<article id="q98" aria-labelledby="label98">
+<h2 id="label98">第 98 题</h2>
+<div class="stem"><p>若要以“w+”方式打开一个文件，下列描述中，正确的是：（_____）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">文件打开时，原有文件内容不被删除，位置指针移动文件末尾，可进行写和读操作。</span></li>
+<li><span class="letter">B.</span><span class="option">文件打开时，原有文件内容不被删除，位置指针移动文件开头，可进行重写和读操作。</span></li>
+<li><span class="letter">C.</span><span class="option">文件打开时，原有文件内容被删除，可进行写和读操作。</span></li>
+<li><span class="letter">D.</span><span class="option">以上说法都不正确。</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年（10月）A场第10题</p>
+</article>
+<article id="q99" aria-labelledby="label99">
+<h2 id="label99">第 99 题</h2>
+<div class="stem"><p>下列选项中，哪一个是C语言关键字：（_____）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">INT</span></li>
+<li><span class="letter">B.</span><span class="option">cher</span></li>
+<li><span class="letter">C.</span><span class="option">integer</span></li>
+<li><span class="letter">D.</span><span class="option">default</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年（10月）B场第1题</p>
+</article>
+<article id="q100" aria-labelledby="label100">
+<h2 id="label100">第 100 题</h2>
+<div class="stem"><p>下列表示逻辑关系：“0≤a≤10”的C语言表达式中，正确的是：（_____）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">10&gt;=a&gt;=0</span></li>
+<li><span class="letter">B.</span><span class="option">a&gt;=0 and a&lt;=10</span></li>
+<li><span class="letter">C.</span><span class="option">a&gt;=0||a&lt;=10</span></li>
+<li><span class="letter">D.</span><span class="option">a&gt;=0&amp;&amp;a&lt;=10</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年（10月）B场第2题</p>
+</article>
+<article id="q101" aria-labelledby="label101">
+<h2 id="label101">第 101 题</h2>
+<div class="stem"><p>下列表达式中，与表达式 !e 等价的是：（_____）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">e == 0</span></li>
+<li><span class="letter">B.</span><span class="option">e != 0</span></li>
+<li><span class="letter">C.</span><span class="option">e == 1</span></li>
+<li><span class="letter">D.</span><span class="option">e != 1</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年（10月）B场第3题</p>
+</article>
+<article id="q102" aria-labelledby="label102">
+<h2 id="label102">第 102 题</h2>
+<div class="stem"><p>已有定义： int k=-5;  则执行</p>
+<pre><code>if(k&lt;=0)
+     if(k==0) printf(&quot;####\n&quot;);
+     else printf(&quot;&amp;&amp;&amp;&amp;\n&quot;);
+else printf(&quot;****\n&quot;);</code></pre>
+<p>语句后，输出结果是：（_____）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">&amp;&amp;&amp;&amp;</span></li>
+<li><span class="letter">B.</span><span class="option">####</span></li>
+<li><span class="letter">C.</span><span class="option">****</span></li>
+<li><span class="letter">D.</span><span class="option">有语法错误，无输出结果</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年（10月）B场第4题</p>
+</article>
+<article id="q103" aria-labelledby="label103">
+<h2 id="label103">第 103 题</h2>
+<div class="stem"><p>设有定义：char ch; 使用 while 循环不断读入字符，当读入字母 N 时结束循环。则下列程序段中，正确的是：（_____）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">while((ch=getchar())!=&#x27;N&#x27; ) printf(&quot;%c&quot;,ch);</span></li>
+<li><span class="letter">B.</span><span class="option">while(ch=getchar()!=&#x27;N&#x27; )     printf(&quot;%c&quot;,ch);</span></li>
+<li><span class="letter">C.</span><span class="option">while(ch=getchar()==&#x27;N&#x27;)     printf(&quot;%c&quot;,ch);</span></li>
+<li><span class="letter">D.</span><span class="option">while((ch=getchar())==&#x27;N&#x27; )   printf(&quot;%c&quot;,ch);</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年（10月）B场第5题</p>
+</article>
+<article id="q104" aria-labelledby="label104">
+<h2 id="label104">第 104 题</h2>
+<div class="stem"><p>字符串“ABCD”储存到字符数组s[]中，则数组的大小至少是：（______）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">3</span></li>
+<li><span class="letter">B.</span><span class="option">4</span></li>
+<li><span class="letter">C.</span><span class="option">5</span></li>
+<li><span class="letter">D.</span><span class="option">6</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年（10月）B场第6题</p>
+</article>
+<article id="q105" aria-labelledby="label105">
+<h2 id="label105">第 105 题</h2>
+<div class="stem"><p>下列描述中，错误的是：（_____）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">实参和形参可以同名</span></li>
+<li><span class="letter">B.</span><span class="option">实参和形参都可以是变量</span></li>
+<li><span class="letter">C.</span><span class="option">实参和形参都可以是表达式</span></li>
+<li><span class="letter">D.</span><span class="option">函数间传送数据可以使用全局变量</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年（10月）B场第7题</p>
+</article>
+<article id="q106" aria-labelledby="label106">
+<h2 id="label106">第 106 题</h2>
+<div class="stem"><p>执行下列语句后，输出结果是：（_____）。</p>
+<pre><code>int d=5;
+void fun(int p)
+ {
+   int d=3;
+   d+=p;
+   printf(&quot;%d &quot;,d);
+ }
+void main()
+{
+   int a=6;
+   fun(a);
+   d+=a;
+   printf(&quot;%d&quot;,d);
+ }</code></pre></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">10 12</span></li>
+<li><span class="letter">B.</span><span class="option">12 10</span></li>
+<li><span class="letter">C.</span><span class="option">11 9</span></li>
+<li><span class="letter">D.</span><span class="option">9 11</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年（10月）B场第8题</p>
+</article>
+<article id="q107" aria-labelledby="label107">
+<h2 id="label107">第 107 题</h2>
+<div class="stem"><p>设有两个字符数组已定义：char a[80],b[80];并且都已正确输入字符串。判断字符串a和b是否相等，应当使用:（_____）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">if (a==b)</span></li>
+<li><span class="letter">B.</span><span class="option">if (a=b)</span></li>
+<li><span class="letter">C.</span><span class="option">if (strcpy(a,b))</span></li>
+<li><span class="letter">D.</span><span class="option">if (strcmp(a,b)==0)</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年（10月）B场第9题</p>
+</article>
+<article id="q108" aria-labelledby="label108">
+<h2 id="label108">第 108 题</h2>
+<div class="stem"><p>关于文件指针，下列描述中，错误的是：（_____）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">只有通过文件指针才能调用相应文件</span></li>
+<li><span class="letter">B.</span><span class="option">定义文件指针时，FILE必须大写</span></li>
+<li><span class="letter">C.</span><span class="option">一个文件指针只能对应一个文件</span></li>
+<li><span class="letter">D.</span><span class="option">一个文件指针可以同时对应多个文件</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年（10月）B场第10题</p>
+</article>
+<article id="q109" aria-labelledby="label109">
+<h2 id="label109">第 109 题</h2>
+<div class="stem"><p>下列用户定义的标识符中，正确的是：（_____）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">%x</span></li>
+<li><span class="letter">B.</span><span class="option">a+b</span></li>
+<li><span class="letter">C.</span><span class="option">a123</span></li>
+<li><span class="letter">D.</span><span class="option">123</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年（10月）C场第1题</p>
+</article>
+<article id="q110" aria-labelledby="label110">
+<h2 id="label110">第 110 题</h2>
+<div class="stem"><p>设有定义：int  x=10; 则C语言表达式 1&lt;x&lt;5 的值是：（_____）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">1</span></li>
+<li><span class="letter">B.</span><span class="option">0</span></li>
+<li><span class="letter">C.</span><span class="option">不确定</span></li>
+<li><span class="letter">D.</span><span class="option">表达式语法有错</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年（10月）C场第2题</p>
+</article>
+<article id="q111" aria-labelledby="label111">
+<h2 id="label111">第 111 题</h2>
+<div class="stem"><p>设有定义：int x=30, y=50, z=80；则执行下列语句后，</p>
+<pre><code>if(x&gt;y || x&lt;z &amp;&amp; y&gt;z)
+{ z=x; x=y; y=z; }</code></pre>
+<p>变量x、y、z的值分别是：（_____）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">x=50, y=80, z=80</span></li>
+<li><span class="letter">B.</span><span class="option">x=50, y=30, z=30</span></li>
+<li><span class="letter">C.</span><span class="option">x=30, y=50, z=80</span></li>
+<li><span class="letter">D.</span><span class="option">x=80, y=30, z=50</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年（10月）C场第4题</p>
+</article>
+<article id="q112" aria-labelledby="label112">
+<h2 id="label112">第 112 题</h2>
+<div class="stem"><p>设有定义：int i=5;  则执行循环语句：while(i++&lt;=10);  后，i的值是：（_____）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">9</span></li>
+<li><span class="letter">B.</span><span class="option">10</span></li>
+<li><span class="letter">C.</span><span class="option">11</span></li>
+<li><span class="letter">D.</span><span class="option">12</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年（10月）C场第5题</p>
+</article>
+<article id="q113" aria-labelledby="label113">
+<h2 id="label113">第 113 题</h2>
+<div class="stem"><p>下列一维数组定义中，错误的是：（_____）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">char a[]=&#x27;china&#x27; ;</span></li>
+<li><span class="letter">B.</span><span class="option">char a[] = &quot;china&quot; ;</span></li>
+<li><span class="letter">C.</span><span class="option">char a[]={&quot;china&quot;} ;</span></li>
+<li><span class="letter">D.</span><span class="option">char a[]={&#x27;c&#x27;,&#x27;h&#x27;,&#x27;i&#x27;,&#x27;n&#x27;,&#x27;a&#x27; };</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年（10月）C场第6题</p>
+</article>
+<article id="q114" aria-labelledby="label114">
+<h2 id="label114">第 114 题</h2>
+<div class="stem"><p>下列描述中，正确的是：（_____）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">函数返回值的数据类型由return的表达式决定</span></li>
+<li><span class="letter">B.</span><span class="option">形参和实参数据类型不一致的时候，形参的数据类型自动向实参转变</span></li>
+<li><span class="letter">C.</span><span class="option">传值调用时，可以通过修改形参的值，而修改对应的实参的值</span></li>
+<li><span class="letter">D.</span><span class="option">函数可以嵌套调用，但不可以嵌套定义</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年（10月）C场第7题</p>
+</article>
+<article id="q115" aria-labelledby="label115">
+<h2 id="label115">第 115 题</h2>
+<div class="stem"><p>下列描述中，错误的是：（_____）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">静态局部变量在函数内部定义，退出该函数，则该变量也会被从内存清除。</span></li>
+<li><span class="letter">B.</span><span class="option">静态局部变量只赋初值一次</span></li>
+<li><span class="letter">C.</span><span class="option">静态局部变量只在定义该变量的函数内部使用</span></li>
+<li><span class="letter">D.</span><span class="option">静态局部变量分配在静态存储区</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年（10月）C场第8题</p>
+</article>
+<article id="q116" aria-labelledby="label116">
+<h2 id="label116">第 116 题</h2>
+<div class="stem"><p>设有定义：</p>
+<pre><code>struct sk 
+{ int a; 
+  float b;
+ } data; 
+int *p;</code></pre>
+<p>若要使p指向data中的a域，下列赋值语句中，正确的是：（_____）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">p=&amp;a;</span></li>
+<li><span class="letter">B.</span><span class="option">p=data.a;</span></li>
+<li><span class="letter">C.</span><span class="option">p=&amp;data.a;</span></li>
+<li><span class="letter">D.</span><span class="option">*p=data.a</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年（10月）C场第9题</p>
+</article>
+<article id="q117" aria-labelledby="label117">
+<h2 id="label117">第 117 题</h2>
+<div class="stem"><p>若要打开D盘根目录中，user子目录下名为abc.txt的文本文件，进行读、写操作, 则下列函数调用中，正确的是：（_____）。</p></div>
+<ul class="options">
+<li><span class="letter">A.</span><span class="option">fopen(&quot;D:\user\abc.txt&quot;,&quot;r&quot;);</span></li>
+<li><span class="letter">B.</span><span class="option">fopen(&quot;D:\\user\\abc.txt&quot;,&quot;r+&quot;);</span></li>
+<li><span class="letter">C.</span><span class="option">fopen(&quot;D:\user\abc.txt&quot;,&quot;rb&quot;);</span></li>
+<li><span class="letter">D.</span><span class="option">fopen(&quot;D:\\user\\abc.txt&quot;,&quot;w&quot;);</span></li>
+</ul>
+<p class="meta">答案：原文未提供<br>来源：2023年（10月）C场第10题</p>
+</article>
+</main>
+</body>
+</html>
