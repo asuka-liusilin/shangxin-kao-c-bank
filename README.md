@@ -4,9 +4,11 @@
 ## 📁 文件结构
 ├── README.md
 ├── 选择题汇总.html
-└── 大题汇总.html
+├── 大题汇总.html
+└── 2026年12月上信考C语言预测卷.html
 
 ## 🌐 在线访问（GitHub Pages）
+- [2026 年 12 月上信考 C 语言原创预测卷 · 在线作答](https://asuka-liusilin.github.io/shangxin-kao-c-bank/2026年12月上信考C语言预测卷.html) · [仓库文件](./2026年12月上信考C语言预测卷.html)
 - 仓库地址：https://github.com/asuka-liusilin/shangxin-kao-c-bank
 - 选择题汇总：https://asuka-liusilin.github.io/shangxin-kao-c-bank/选择题汇总.html
 - 大题汇总：https://asuka-liusilin.github.io/shangxin-kao-c-bank/大题汇总.html
