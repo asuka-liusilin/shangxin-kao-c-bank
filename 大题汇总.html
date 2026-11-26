@@ -38,7 +38,9 @@ td {border:1px solid #9aa9bd; padding:.35rem .65rem}
 
 .quick-nav {position:fixed; z-index:10; right:max(.75rem,env(safe-area-inset-right)); bottom:max(.75rem,env(safe-area-inset-bottom)); display:flex; gap:.4rem; align-items:center; margin:0; padding:.28rem; border:1px solid #b9c9db; border-radius:.65rem; background:white; box-shadow:0 2px 12px #24324924}
 .quick-nav select,.quick-nav a {box-sizing:border-box; min-height:42px; border-radius:.4rem; font:inherit; font-size:.94rem}
-.quick-nav select {width:7rem; padding:0 .5rem; color:white; background:#173d72; border:1px solid #173d72; cursor:pointer}
+.quick-nav label {display:grid; gap:.1rem; min-width:0}
+.quick-nav label span {padding:0 .4rem; font-size:.78rem; color:#45556e}
+.quick-nav select {width:min(15rem,55vw); padding:0 .5rem; color:white; background:#173d72; border:1px solid #173d72; cursor:pointer}
 .quick-nav option,.quick-nav optgroup {background:white; color:#172033}
 .quick-nav a {display:inline-flex; align-items:center; padding:0 .65rem; text-decoration:none}
 .quick-nav a:hover {background:#eef3fa}
@@ -3258,8 +3260,9 @@ Charge_Update.txt内容如下：
 </section>
 </main>
 <nav class="quick-nav" aria-label="快捷导航">
-<select id="question-picker" aria-label="选题目录，按场次或题号跳转">
-<option value="" selected>选题目录</option>
+<label><span id="picker-location">选题目录</span>
+<select id="question-picker" aria-label="选题目录，按场次或题号跳转" aria-describedby="picker-location">
+<option value="" selected>页首目录</option>
 <optgroup label="2020年C场">
 <option value="paper1">2020年C场 · 场次开头</option>
 <option value="q1">001 程序填空题第 1 题</option>
@@ -3410,15 +3413,53 @@ Charge_Update.txt内容如下：
 <option value="q104">104 (三)编程题（第5问，20分）</option>
 <option value="q105">105 (四)编程题（第6问，30分）</option>
 </optgroup>
-</select>
+</select></label>
 <a href="#top">↑ 回到顶部</a>
 </nav>
 <script>
-document.getElementById('question-picker').addEventListener('change', function () {
-  const target = document.getElementById(this.value);
-  if (!target) return;
-  this.selectedIndex = 0;
-  location.hash = target.id;
-  target.scrollIntoView({block: 'start'});
+const picker = document.getElementById('question-picker');
+const locationLabel = document.getElementById('picker-location');
+const entries = Array.from(picker.options, option => ({
+  option,
+  title: option.textContent,
+  target: document.getElementById(option.value || 'top')
+}));
+let current;
+let frame = 0;
+
+function syncLocation() {
+  frame = 0;
+  // 以视口上方为阅读位置，长题跨屏时仍指向同一道题。
+  let low = 1;
+  let high = entries.length;
+  while (low < high) {
+    const mid = Math.floor((low + high) / 2);
+    if (entries[mid].target.getBoundingClientRect().top <= 24) low = mid + 1;
+    else high = mid;
+  }
+  const entry = entries[low - 1];
+  picker.value = entry.option.value;
+  if (current === entry) return;
+  if (current) current.option.textContent = current.title;
+  entry.option.textContent = '当前位置 · ' + entry.title;
+  const paper = entry.option.closest('optgroup');
+  locationLabel.textContent = paper ? '选题目录 · ' + paper.label : '选题目录';
+  current = entry;
+}
+
+function queueSync() {
+  if (!frame) frame = requestAnimationFrame(syncLocation);
+}
+window.addEventListener('scroll', queueSync, {passive:true});
+window.addEventListener('resize', queueSync);
+window.addEventListener('pageshow', queueSync);
+if ('ResizeObserver' in window) new ResizeObserver(queueSync).observe(document.querySelector('main'));
+picker.addEventListener('pointerdown', syncLocation);
+picker.addEventListener('change', () => {
+  const id = picker.value || 'top';
+  location.hash = id;
+  document.getElementById(id).scrollIntoView({block:'start'});
+  queueSync();
 });
+syncLocation();
 </script></body></html>
