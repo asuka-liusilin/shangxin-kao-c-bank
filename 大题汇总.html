@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="zh-CN" id="top">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,6 +35,16 @@ table {border-collapse:collapse}
 td {border:1px solid #9aa9bd; padding:.35rem .65rem}
 @media(max-width:500px){main{width:calc(100% - 1rem); margin-top:1rem} article{padding:.75rem}}
 @media print {:root{background:white} main{width:100%; margin:0} figure{break-inside:avoid} nav{display:none}}
+
+.quick-nav {position:fixed; z-index:10; right:max(.75rem,env(safe-area-inset-right)); bottom:max(.75rem,env(safe-area-inset-bottom)); display:flex; gap:.4rem; align-items:center; margin:0; padding:.28rem; border:1px solid #b9c9db; border-radius:.65rem; background:white; box-shadow:0 2px 12px #24324924}
+.quick-nav select,.quick-nav a {box-sizing:border-box; min-height:42px; border-radius:.4rem; font:inherit; font-size:.94rem}
+.quick-nav select {width:7rem; padding:0 .5rem; color:white; background:#173d72; border:1px solid #173d72; cursor:pointer}
+.quick-nav option,.quick-nav optgroup {background:white; color:#172033}
+.quick-nav a {display:inline-flex; align-items:center; padding:0 .65rem; text-decoration:none}
+.quick-nav a:hover {background:#eef3fa}
+.quick-nav :focus-visible {outline:3px solid #408bd7; outline-offset:2px}
+@media screen {main {padding-bottom:3rem} article[id],.paper[id] {scroll-margin-top:.6rem}}
+@media print {.quick-nav {display:none}}
 </style>
 </head>
 <body>
@@ -3246,4 +3256,169 @@ Charge_Update.txt内容如下：
 
 运行示例4：</pre></details></article>
 </section>
-</main></body></html>
+</main>
+<nav class="quick-nav" aria-label="快捷导航">
+<select id="question-picker" aria-label="选题目录，按场次或题号跳转">
+<option value="" selected>选题目录</option>
+<optgroup label="2020年C场">
+<option value="paper1">2020年C场 · 场次开头</option>
+<option value="q1">001 程序填空题第 1 题</option>
+<option value="q2">002 程序填空题第 2 题</option>
+<option value="q3">003 程序调试题第 1 题</option>
+<option value="q4">004 程序调试题第 2 题</option>
+<option value="q5">005 程序调试题第 3 题</option>
+<option value="q6">006 编程题第 1 题</option>
+<option value="q7">007 编程题第 2 题</option>
+</optgroup>
+<optgroup label="2020年D场">
+<option value="paper2">2020年D场 · 场次开头</option>
+<option value="q8">008 程序填空题第 1 题</option>
+<option value="q9">009 程序填空题第 2 题</option>
+<option value="q10">010 程序调试题第 1 题</option>
+<option value="q11">011 程序调试题第 2 题</option>
+<option value="q12">012 程序调试题第 3 题</option>
+<option value="q13">013 编程题第 1 题</option>
+<option value="q14">014 编程题第 2 题</option>
+</optgroup>
+<optgroup label="2021年A场">
+<option value="paper3">2021年A场 · 场次开头</option>
+<option value="q15">015 程序填空题第 1 题</option>
+<option value="q16">016 程序填空题第 2 题</option>
+<option value="q17">017 程序调试题第 1 题</option>
+<option value="q18">018 程序调试题第 2 题</option>
+<option value="q19">019 程序调试题第 3 题</option>
+<option value="q20">020 编程题第 1 题</option>
+<option value="q21">021 编程题第 2 题</option>
+</optgroup>
+<optgroup label="2021年B场">
+<option value="paper4">2021年B场 · 场次开头</option>
+<option value="q22">022 程序填空题第 1 题</option>
+<option value="q23">023 程序填空题第 2 题</option>
+<option value="q24">024 程序调试题第 1 题</option>
+<option value="q25">025 程序调试题第 2 题</option>
+<option value="q26">026 程序调试题第 3 题</option>
+<option value="q27">027 编程题第 1 题</option>
+<option value="q28">028 编程题第 2 题</option>
+</optgroup>
+<optgroup label="2021年C场">
+<option value="paper5">2021年C场 · 场次开头</option>
+<option value="q29">029 程序填空题第 1 题</option>
+<option value="q30">030 程序填空题第 2 题</option>
+<option value="q31">031 程序调试题第 1 题</option>
+<option value="q32">032 程序调试题第 2 题</option>
+<option value="q33">033 程序调试题第 3 题</option>
+<option value="q34">034 编程题第 1 题</option>
+<option value="q35">035 编程题第 2 题</option>
+</optgroup>
+<optgroup label="2023年A场">
+<option value="paper6">2023年A场 · 场次开头</option>
+<option value="q36">036 程序填空题第 1 题</option>
+<option value="q37">037 程序填空题第 2 题</option>
+<option value="q38">038 程序调试题第 1 题</option>
+<option value="q39">039 程序调试题第 2 题</option>
+<option value="q40">040 程序调试题第 3 题</option>
+<option value="q41">041 编程题第 1 题</option>
+<option value="q42">042 编程题第 2 题</option>
+</optgroup>
+<optgroup label="2023年B场">
+<option value="paper7">2023年B场 · 场次开头</option>
+<option value="q43">043 程序填空题第 1 题</option>
+<option value="q44">044 程序填空题第 2 题</option>
+<option value="q45">045 程序调试题第 1 题</option>
+<option value="q46">046 程序调试题第 2 题</option>
+<option value="q47">047 程序调试题第 3 题</option>
+<option value="q48">048 编程题第 1 题</option>
+<option value="q49">049 编程题第 2 题</option>
+</optgroup>
+<optgroup label="2023年C场">
+<option value="paper8">2023年C场 · 场次开头</option>
+<option value="q50">050 程序填空题第 1 题</option>
+<option value="q51">051 程序填空题第 2 题</option>
+<option value="q52">052 程序调试题第 1 题</option>
+<option value="q53">053 程序调试题第 2 题</option>
+<option value="q54">054 程序调试题第 3 题</option>
+<option value="q55">055 编程题第 1 题</option>
+<option value="q56">056 编程题第 2 题</option>
+</optgroup>
+<optgroup label="2023年D场">
+<option value="paper9">2023年D场 · 场次开头</option>
+<option value="q57">057 程序填空题第 1 题</option>
+<option value="q58">058 程序填空题第 2 题</option>
+<option value="q59">059 程序调试题第 1 题</option>
+<option value="q60">060 程序调试题第 2 题</option>
+<option value="q61">061 程序调试题第 3 题</option>
+<option value="q62">062 编程题第 1 题</option>
+<option value="q63">063 编程题第 2 题</option>
+</optgroup>
+<optgroup label="2023年（10月）A场">
+<option value="paper10">2023年（10月）A场 · 场次开头</option>
+<option value="q64">064 程序填空题第 1 题</option>
+<option value="q65">065 程序填空题第 2 题</option>
+<option value="q66">066 程序调试题第 1 题</option>
+<option value="q67">067 程序调试题第 2 题</option>
+<option value="q68">068 程序调试题第 3 题</option>
+<option value="q69">069 编程题第 1 题</option>
+<option value="q70">070 编程题第 2 题</option>
+</optgroup>
+<optgroup label="2023年（10月）B场">
+<option value="paper11">2023年（10月）B场 · 场次开头</option>
+<option value="q71">071 程序填空题第 1 题</option>
+<option value="q72">072 程序填空题第 2 题</option>
+<option value="q73">073 程序调试题第 1 题</option>
+<option value="q74">074 程序调试题第 2 题</option>
+<option value="q75">075 程序调试题第 3 题</option>
+<option value="q76">076 编程题第 1 题</option>
+<option value="q77">077 编程题第 2 题</option>
+</optgroup>
+<optgroup label="2023年（10月）C场">
+<option value="paper12">2023年（10月）C场 · 场次开头</option>
+<option value="q78">078 程序填空题第 1 题</option>
+<option value="q79">079 程序填空题第 2 题</option>
+<option value="q80">080 程序调试题第 1 题</option>
+<option value="q81">081 程序调试题第 2 题</option>
+<option value="q82">082 程序调试题第 3 题</option>
+<option value="q83">083 编程题第 1 题</option>
+<option value="q84">084 编程题第 2 题</option>
+</optgroup>
+<optgroup label="专题1兼容-A场程序题">
+<option value="paper13">专题1兼容-A场程序题 · 场次开头</option>
+<option value="q85">085 1. 程序调试题1</option>
+<option value="q86">086 2. 程序调试题2</option>
+<option value="q87">087 3. 程序调试题3</option>
+<option value="q88">088 1．编程题1</option>
+<option value="q89">089 2．编程题2</option>
+<option value="q90">090 (三)编程题（第5问，20分）</option>
+<option value="q91">091 (四)编程题（第6问，30分）</option>
+</optgroup>
+<optgroup label="专题1兼容-B场程序题">
+<option value="paper14">专题1兼容-B场程序题 · 场次开头</option>
+<option value="q92">092 1. 程序调试题1</option>
+<option value="q93">093 2. 程序调试题2</option>
+<option value="q94">094 3. 程序调试题3</option>
+<option value="q95">095 1．编程题1</option>
+<option value="q96">096 2．编程题2</option>
+<option value="q97">097 (三)编程题（第5问，20分）</option>
+<option value="q98">098 (四)编程题（第6问，30分）</option>
+</optgroup>
+<optgroup label="专题1兼容-C场程序题">
+<option value="paper15">专题1兼容-C场程序题 · 场次开头</option>
+<option value="q99">099 1. 程序调试题1</option>
+<option value="q100">100 2. 程序调试题2</option>
+<option value="q101">101 3. 程序调试题3</option>
+<option value="q102">102 1．编程题1</option>
+<option value="q103">103 2．编程题2</option>
+<option value="q104">104 (三)编程题（第5问，20分）</option>
+<option value="q105">105 (四)编程题（第6问，30分）</option>
+</optgroup>
+</select>
+<a href="#top">↑ 回到顶部</a>
+</nav>
+<script>
+document.getElementById('question-picker').addEventListener('change', function () {
+  const target = document.getElementById(this.value);
+  if (!target) return;
+  this.selectedIndex = 0;
+  location.hash = target.id;
+  target.scrollIntoView({block: 'start'});
+});
+</script></body></html>
